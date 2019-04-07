@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>Base</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #nameid{
+        font-size:30px;
+        color:crimson;
+    }
+    nav{
+        float:right;
+        font-size:30px;
+    }
+    a{
+        margin-right:-1%;
+        text-decoration:olive;
+        border:2px red solid;
+        border-radius:10px;
+        background-color:green;
+        color:white;
+
+    }
+    a:hover{
+        background-color:blue;
+        color:white;
+        text-decoration:none;
+    }
+    #hid {
+        font-size: 70px;
+        color: white;
+        background-color:darkorchid;
+        border: 2px solid green;
+        border-radius: 50px;
+    }
+    .div1 {
+        font-size: 20px;
+        text-align: center;
+        background-color:darkorchid;
+        border-radius: 30px;
+        color:white;
+    }
+    .col-md-4 {
+        border: 2px blue solid;
+        border-radius: 20px;
+    }
+
+</style>
+<body>
+<p id="pp1">
+<nav>
+    <a href="/home/">home</a>
+    <a href="/contact/">contact</a>
+    <a href="/services/">services</a>
+    <a href="/feedback/">feedback</a>
+    <a href="/gallery/">gallery</a>
+
+</nav>
+</p>
+<br><br>
+<div class="container">
+    <center><h1 id="hid">welcome to durgasoft</h1></center>
+    {% block content %}
+    {% endblock %}
+<br>
+<div class="container-fluid div1">
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <h2>Address-1</h2>
+            <pre>
+ Narayana
+ 590675903
+ pythonnarayana@gmail.com
+ durgasoft
+            </pre>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <h2>Address-2</h2>
+            <pre>
+ Narayana
+ 590675903
+ pythonnarayana@gmail.com
+ durgasoft
+            </pre>
+
+            </div>
+        </div>
+            <div class="col-md-4">
+                <div>
+                    <h2> Address-3</h2>
+                <pre>
+ Narayana
+ 590675903
+ pythonnarayana@gmail.com
+ durgasoft
+                </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

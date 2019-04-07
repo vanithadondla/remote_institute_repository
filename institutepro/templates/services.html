@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>services page</title>
+</head>
+<body>
+{% block content %}
+<h1 class="text-color">Available courses</h1>
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr class="bg-danger">
+        <th>Course name</th>
+        <th>Start date</th>
+        <th>Duration</th>
+        <th>timings</th>
+        <th>fee</th>
+        <th>Faculty Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="bg-warning">
+        <td>python</td>
+        <td>12-04-2019</td>
+        <td>45 dys</td>
+        <td>9am to 10am</td>
+        <td>2000</td>
+        <td>narayana</td>
+    </tr>
+    <tr class="bg-primary">
+        <td>django</td>
+        <td>13-04-2019</td>
+        <td>45 dys</td>
+        <td>4pm to 6pmam</td>
+        <td>2000</td>
+        <td>narayana</td>
+    </tr>
+    <tr class="bg-dark">
+        <td>Restapi</td>
+        <td>14-04-2019</td>
+        <td>30 dys</td>
+        <td>6pm to 7pm</td>
+        <td>1000</td>
+        <td>srinivas</td>
+    </tr>
+    <tr class="bg-danger">
+        <td>Ui</td>
+        <td>15-04-2019</td>
+        <td>30 dys</td>
+        <td>11am to 12am</td>
+        <td>1000</td>
+        <td>narayana</td>
+    </tr>
+    </tbody>
+</table>
+{% endblock %}
+
+</body>
+</html>
